@@ -49,10 +49,10 @@
             this.btnLowers = new System.Windows.Forms.Button();
             this.btnUppers = new System.Windows.Forms.Button();
             this.btnNumbers = new System.Windows.Forms.Button();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.cbEqualChar = new System.Windows.Forms.CheckBox();
             this.lblFirstChar = new System.Windows.Forms.Label();
             this.lblOthers = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsOptions = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,9 +88,9 @@
             this.cbAmbiguous.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbAmbiguous.Location = new System.Drawing.Point(9, 170);
             this.cbAmbiguous.Name = "cbAmbiguous";
-            this.cbAmbiguous.Size = new System.Drawing.Size(348, 20);
+            this.cbAmbiguous.Size = new System.Drawing.Size(371, 20);
             this.cbAmbiguous.TabIndex = 4;
-            this.cbAmbiguous.Text = "Excluir caract. ambíguos ({ } [ ] ( ) / \\ \' \" ` ~ , ; : . < >)";
+            this.cbAmbiguous.Text = "Excluir caracteres ambíguos ({ } [ ] ( ) / \\ \' \" ` ~ , ; : . < >)";
             this.cbAmbiguous.UseVisualStyleBackColor = true;
             // 
             // lblAmountPass
@@ -327,6 +327,18 @@
             this.btnNumbers.UseVisualStyleBackColor = false;
             this.btnNumbers.Click += new System.EventHandler(this.btnNumbers_Click);
             // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(225, -4);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(338, 126);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picLogo.TabIndex = 23;
+            this.picLogo.TabStop = false;
+            this.tip.SetToolTip(this.picLogo, "Gerador de Senhas");
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
+            // 
             // cbEqualChar
             // 
             this.cbEqualChar.AutoSize = true;
@@ -361,18 +373,6 @@
             this.lblOthers.Text = "Outros caracteres";
             this.lblOthers.Click += new System.EventHandler(this.picLogo_Click);
             // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(225, -4);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(338, 126);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picLogo.TabIndex = 23;
-            this.picLogo.TabStop = false;
-            this.tip.SetToolTip(this.picLogo, "Gerador de Senhas");
-            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -397,7 +397,7 @@
             // 
             this.tsmiInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsmiInfo.Image")));
             this.tsmiInfo.Name = "tsmiInfo";
-            this.tsmiInfo.Size = new System.Drawing.Size(180, 22);
+            this.tsmiInfo.Size = new System.Drawing.Size(118, 22);
             this.tsmiInfo.Text = "Créditos";
             this.tsmiInfo.Click += new System.EventHandler(this.tsmiInfo_Click);
             // 
@@ -405,7 +405,7 @@
             // 
             this.tsmiGitHub.Image = ((System.Drawing.Image)(resources.GetObject("tsmiGitHub.Image")));
             this.tsmiGitHub.Name = "tsmiGitHub";
-            this.tsmiGitHub.Size = new System.Drawing.Size(180, 22);
+            this.tsmiGitHub.Size = new System.Drawing.Size(118, 22);
             this.tsmiGitHub.Text = "GitHub";
             this.tsmiGitHub.Click += new System.EventHandler(this.tsmiGitHub_Click);
             // 

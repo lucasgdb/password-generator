@@ -72,10 +72,8 @@ namespace password_generator
 
         private void frmPassGenerator_Load(object sender, System.EventArgs e)
         {
-            if (!Properties.Settings.Default.Symbols)
-            {
-                clickButtons(btnSymbols); cbAmbiguous.Enabled = false;
-            }
+            if (!Properties.Settings.Default.Symbols)            
+                clickButtons(btnSymbols);
         
             if (!Properties.Settings.Default.Numbers)
                 clickButtons(btnNumbers);
@@ -138,7 +136,7 @@ namespace password_generator
             if (btnNumbers.BackColor == System.Drawing.Color.Teal) chars += numbers;
             if (btnLowers.BackColor == System.Drawing.Color.Teal) chars += lowers;
             if (btnUppers.BackColor == System.Drawing.Color.Teal) chars += uppers;
-            if (cbAmbiguous.Enabled && !cbAmbiguous.Checked) chars += symbols2;
+            if (btnSymbols.BackColor == System.Drawing.Color.Teal && !cbAmbiguous.Checked) chars += symbols2;
 
             if (chars.Length < 6)
             {
@@ -156,7 +154,7 @@ namespace password_generator
                 else if (btnUpper.BackColor == System.Drawing.Color.Teal)
                     passGenerated += uppers[rnd.Next(0, uppers.Length)];
                 else if (btnSymbol.BackColor == System.Drawing.Color.Teal)
-                    passGenerated += (symbols + (cbAmbiguous.Enabled && !cbAmbiguous.Checked ? symbols2 : string.Empty))[rnd.Next(0, symbols.Length + (!cbAmbiguous.Checked ? symbols2.Length : 0))];
+                    passGenerated += (symbols + (!cbAmbiguous.Checked ? symbols2 : string.Empty))[rnd.Next(0, symbols.Length + (!cbAmbiguous.Checked ? symbols2.Length : 0))];
 
                 for (int i = 1; i < amountChar; i++)
                 {
@@ -262,8 +260,6 @@ namespace password_generator
         private void btnSymbols_Click(object sender, System.EventArgs e)
         {
             clickButtons(btnSymbols);
-            if (btnSymbols.BackColor == System.Drawing.Color.Teal) cbAmbiguous.Enabled = true;
-            else cbAmbiguous.Enabled = false;
         }
 
         private void tsmiInfo_Click(object sender, System.EventArgs e)

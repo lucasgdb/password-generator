@@ -14,4 +14,4 @@
 ## Download: [Clique aqui](https://drive.google.com/uc?authuser=0&id=1bpKwEVd3P_BtGvMgk_GNIlIFv2fuoa4D&export=download)
 
 ## Imagens
-<img align="center" src="https://i.imgur.com/DUVLgNd.png"/>
+<img align="center" src="https://i.imgur.com/3Fz1x2r.png"/>
