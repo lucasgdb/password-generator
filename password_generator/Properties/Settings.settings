@@ -23,9 +23,6 @@
     <Setting Name="Equals" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="Multiple" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="LevelPass" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
