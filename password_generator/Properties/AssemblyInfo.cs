@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Gerador de Senhas")]
 [assembly: AssemblyDescription("Gerador de Senhas para maior segurança na internet")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Lucas Naja")]
+[assembly: AssemblyCompany("http://github.com/LucasNaja")]
 [assembly: AssemblyProduct("password_generator")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("http://www.youtube.com/c/lucasnaja")]
+[assembly: AssemblyTrademark("Lucas Naja")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

@@ -492,7 +492,7 @@
             this.MaximizeBox = false;
             this.Name = "frmPassGen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gerador de Senhas";
+            this.Text = "Gerador de Senha";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPassGen_FormClosing);
             this.Load += new System.EventHandler(this.frmPassGenerator_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.frmPassGen_MouseClick);

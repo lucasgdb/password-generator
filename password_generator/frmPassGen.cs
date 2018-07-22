@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace password_generator
+﻿namespace password_generator
 {
     public partial class frmPassGen : System.Windows.Forms.Form
     {
@@ -168,7 +166,7 @@ namespace password_generator
                         char[] chL = { 'i', 'l', '1', 'o', '0', 'O' };
                         for (int j = 0; j < chL.Length; j++)
                             if (passGenerated[i - 1] == chL[j])
-                                while (ch == 'i' || ch == 'l' || ch == '1' || ch == 'o' || ch == '0' || ch == 'O' && ch != chL[j])
+                                while ((ch == 'i' || ch == 'l' || ch == '1' || ch == 'o' || ch == '0' || ch == 'O') && ch != chL[j])
                                     ch = chars[rnd.Next(0, chars.Length)];
                     }
                     passGenerated += ch;
